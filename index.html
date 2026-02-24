@@ -11,9 +11,22 @@
         .status-badge { display: inline-block; background: #fff3cd; color: #856404; padding: 4px 12px; border-radius: 20px; font-size: 14px; font-weight: bold; margin-bottom: 20px; }
         p { margin-bottom: 20px; }
         .highlight { font-weight: 600; color: #000; }
-        .footer { margin-top: 30px; font-size: 14px; color: #666; border-top: 1px solid #eee; pt: 20px; }
+        .footer { margin-top: 30px; font-size: 14px; color: #666; border-top: 1px solid #eee; padding-top: 20px; }
         a { color: #5865F2; text-decoration: none; }
         a:hover { text-decoration: underline; }
+        
+        /* New styles for embedding the GIF */
+        .gif-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .gif-container img {
+            max-width: 200px; /* Resizes the GIF reasonably */
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Optional: adds a slight rounding to match the card */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: slight drop shadow */
+        }
     </style>
 </head>
 <body>
@@ -32,6 +45,12 @@
         <div class="footer">
             Contact Support: <a href="mailto:support@pygmalion.chat">support@pygmalion.chat</a>
         </div>
+    </div>
+
+    <!-- Embedded GIF at the bottom of the page -->
+    <div class="gif-container">
+        <!-- A relative path is used so it works perfectly in the root of a GitHub Pages repo -->
+        <img src="aqua_bweh.gif" alt="Aqua Bweh">
     </div>
 </body>
 </html>
